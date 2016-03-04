@@ -5,7 +5,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/home', {
             templateUrl: '/views/templates/petfinder.html',
-            controller: 'PetController'
+            //controller: 'PetController'
         })
         .when('/favorites', {
             templateUrl: '/views/templates/favorites.html',
