@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var favorite = require('./routes/favorite');
 
-app.use(bodyParser.json());
+app.use(bodyParser.json()); //1
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/favorite', favorite);
